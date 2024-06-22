@@ -1,1 +1,1 @@
-# Site Under Development | Foundry
+# Site Under Development
