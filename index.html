@@ -84,7 +84,7 @@ html body[data-header-resize="1"] .container-wrap,
 <link rel="stylesheet" id="responsive-css" href="https://foundry.benjamingath.com/wp-content/themes/salient/css/build/responsive.css?ver=16.1.3" type="text/css" media="all">
 <link rel="stylesheet" id="nectar-flickity-css" href="https://foundry.benjamingath.com/wp-content/themes/salient/css/build/plugins/flickity.css?ver=16.1.3" type="text/css" media="all">
 <link rel="stylesheet" id="skin-material-css" href="https://foundry.benjamingath.com/wp-content/themes/salient/css/build/skin-material.css?ver=16.1.3" type="text/css" media="all">
-<link rel="stylesheet" id="salient-wp-menu-dynamic-css" href="https://foundry.benjamingath.com/wp-content/uploads/salient/menu-dynamic.css?ver=36730" type="text/css" media="all">
+<link rel="stylesheet" id="salient-wp-menu-dynamic-css" href="https://foundry.benjamingath.com/wp-content/uploads/salient/menu-dynamic.css?ver=67488" type="text/css" media="all">
 <link rel="stylesheet" id="js_composer_front-css" href="https://foundry.benjamingath.com/wp-content/plugins/js_composer_salient/assets/css/js_composer.min.css?ver=7.1" type="text/css" media="all">
 <link rel="stylesheet" id="dynamic-css-css" href="https://foundry.benjamingath.com/wp-content/themes/salient/css/salient-dynamic-styles.css?ver=92275" type="text/css" media="all">
 <style id="dynamic-css-inline-css" type="text/css">
@@ -241,92 +241,67 @@ body::-webkit-scrollbar-thumb {
 		</style>
 		<style type="text/css" data-type="vc_custom-css">.gradient-strip {
     width: 100%;
-    height: 25px; /* Adjust the height to make it thinner */
-    background: linear-gradient(270deg, #FF0000, #FF8C00, #FFFF00, #008000, #0000FF, #4B0082, #FF0000, #FF0000, #4B0082, #0000FF, #008000, #FFFF00, #FF8C00, #FF0000); /* Pride flag colors */
+    height: 30px; /* Adjust the height to make it thinner */
+    background: linear-gradient(270deg, #FF0000, #FF8C00, #FFFF00, #008000, #0000FF, #4B0082, #FF0000); /* Pride flag colors */
     background-size: 400% 400%; /* Adjust size for smoother animation */
     overflow: hidden; /* Ensure any overflow is hidden */
     position: relative; /* Relative positioning for absolute children */
-    animation: moveGradient 50s ease infinite; /* Adjust duration for speed */
-}
-
-@keyframes moveGradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-        0% {
-        background-position: 0% 50%;
-    }
 }
 
 .scrolling-text {
     display: flex;
     position: absolute;
-    white-space: normal; /* Prevent text from wrapping */
-    animation: scrollText 100s linear infinite; /* Adjust duration for speed */
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: scrollText 150s linear infinite; /* Adjust duration for speed */
 }
 
 @keyframes scrollText {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
 .scrolling-text span {
     display: inline-block;
-    padding-right: 2%; /* Create space between the repeated texts */
+    padding-right: 100%; /* Create space between the repeated texts */
     color: white; /* Set text color */
     font-size: 16px; /* Adjust font size */
     font-weight: bold; /* Make the text bold */
     text-transform: uppercase; /* Optional: Make the text uppercase */
 }
 
+
 .gradient-strip-2 {
     width: 100%;
-    height: 25px; /* Adjust the height to make it thinner */
-    background: linear-gradient(270deg, #FF0000, #FF8C00, #FFFF00, #008000, #0000FF, #4B0082, #FF0000, #FF0000, #4B0082, #0000FF, #008000, #FFFF00, #FF8C00, #FF0000); /* Pride flag colors */
+    height: 30px; /* Adjust the height to make it thinner */
+    background: linear-gradient(90deg, #FF0000, #FF8C00, #FFFF00, #008000, #0000FF, #4B0082, #FF0000); /* Pride flag colors */
     background-size: 400% 400%; /* Adjust size for smoother animation */
     overflow: hidden; /* Ensure any overflow is hidden */
     position: relative; /* Relative positioning for absolute children */
-    animation: moveGradient2 50s ease infinite; /* Adjust duration for speed */
-}
-
-@keyframes moveGradient2 {
-    0% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-        0% {
-        background-position: 100% 50%;
-    }
 }
 
 .scrolling-text-2 {
     display: flex;
     position: absolute;
-    white-space: normal; /* Prevent text from wrapping */
-    animation: scrollText2 100s linear infinite; /* Adjust duration for speed */
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: scrollText-2 150s linear infinite; /* Adjust duration for speed */
 }
 
-@keyframes scrollText2 {
+@keyframes scrollText-2 {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 }
 
 .scrolling-text-2 span {
     display: inline-block;
-    padding-right: 2%; /* Create space between the repeated texts */
+    padding-right: 100%; /* Create space between the repeated texts */
     color: white; /* Set text color */
     font-size: 16px; /* Adjust font size */
     font-weight: bold; /* Make the text bold */
@@ -424,11 +399,11 @@ body::-webkit-scrollbar-thumb {
 	<div class="container main-content" role="main">
 		<div class="row">
 			
-		<div id="fws_6683643d5b0ad" data-column-margin="none" data-midnight="dark" class="wpb_row vc_row-fluid vc_row top-level full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-middle  top_margin_0px" style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="fade-in" data-bg-animation-delay="300" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" style="background-color: #ffffff;"><div class="row-bg viewport-desktop using-bg-color" style="background-color: #ffffff; "></div></div></div><div class="row_col_wrap_12 col span_12 dark right">
+		<div id="fws_6683697983768" data-column-margin="none" data-midnight="dark" class="wpb_row vc_row-fluid vc_row top-level full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-middle  top_margin_0px" style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="fade-in" data-bg-animation-delay="300" data-bg-overlay="false"><div class="inner-wrap row-bg-layer" style="background-color: #ffffff;"><div class="row-bg viewport-desktop using-bg-color" style="background-color: #ffffff; "></div></div></div><div class="row_col_wrap_12 col span_12 dark right">
 	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
 		<div class="vc_column-inner">
 			<div class="wpb_wrapper">
-				<div id="fws_6683643d5f0fb" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row vc_row-o-equal-height vc_row-flex vc_row-o-content-middle reverse_columns_column_tablet reverse_columns_column_phone" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+				<div id="fws_66836979874f5" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row vc_row-o-equal-height vc_row-flex vc_row-o-content-middle reverse_columns_column_tablet reverse_columns_column_phone" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column has-animation el_spacing_30px col-overflow-hidden left_padding_desktop_5pct top_padding_desktop_2pct right_padding_desktop_5pct bottom_padding_desktop_8pct " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="fade-in-from-bottom" data-delay="600">
 		<div class="vc_column-inner">
 		<div class="wpb_wrapper">
@@ -451,16 +426,39 @@ body::-webkit-scrollbar-thumb {
 	<div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column has-animation left_margin_0px left_padding_desktop_5pct top_padding_desktop_2pct right_padding_desktop_5pct bottom_padding_desktop_8pct " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="fade-in-from-bottom" data-delay="150">
 		<div class="vc_column-inner">
 		<div class="wpb_wrapper">
-			<h1 style="font-size: 100px;line-height: 1.5;text-align: right" class="vc_custom_heading vc_custom_1719047912811">Welcome to</h1><h1 style="font-size: 100px;line-height: 1.5;text-align: right" class="vc_custom_heading vc_custom_1719079274837">FOUNDRY.</h1>
+			
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<div class="gradient-strip">
+    <div class="scrolling-text">
+        <span>PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE</span>
+    </div>
+</div>
+
+		</div>
+	</div>
+<h1 style="font-size: 100px;line-height: 1.5;text-align: right" class="vc_custom_heading vc_custom_1719047912811">Welcome to</h1><h1 style="font-size: 100px;line-height: 1.5;text-align: right" class="vc_custom_heading vc_custom_1719079274837">FOUNDRY.</h1>
 <div class="nectar-rotating-words-title  text_direction_ltr " data-rotation="2000" data-mobile="inline">
   <h2 class="heading"><span class="beginning-text">A space for</span>  <span class="dynamic-words" data-inherit-heading-family="default">
     <span class="text-wrap active"><span><span>Freedom.</span></span></span><span class="text-wrap"><span><span> Odyssey.</span></span></span><span class="text-wrap"><span><span> Understanding.</span></span></span><span class="text-wrap"><span><span> Nuance.</span></span></span><span class="text-wrap"><span><span> Discovery.</span></span></span><span class="text-wrap"><span><span> Rumination.</span></span></span><span class="text-wrap"><span><span> Yonder.</span></span></span>  </span>
   </h2>
 </div><div class="nectar-cta  text_hover_color_ff0000 border_color_ffffff hover_border_color_ff0000 border_radius_0px alignment_tablet_default alignment_phone_default display_tablet_inherit display_phone_inherit " data-color="default" data-using-bg="false" data-style="see-through" data-display="block" data-alignment="right" data-text-color="custom"><h3 style="color: #000000;"> <span class="text"> </span><span class="link_wrap"><a class="link_text" role="button" href="https://foundry.benjamingath.com/posts">View Posts<span class="arrow"></span></a></span></h3></div>
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<div class="gradient-strip-2">
+    <div class="scrolling-text-2">
+        <span>PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE    PRIDE</span>
+    </div>
+</div>
+
+		</div>
+	</div>
+<div class="nectar-responsive-text nectar-link-underline-effect"><h5 style="text-align: right">Supporting Pride 2024</h5>
+</div>
 		</div> 
 	</div>
 	</div> 
-</div></div><div id="fws_6683643d64f91" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+</div></div><div id="fws_668369798e30a" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
 		<div class="vc_column-inner">
 		<div class="wpb_wrapper">
@@ -475,11 +473,11 @@ body::-webkit-scrollbar-thumb {
 		</div>
 	</div> 
 </div></div>
-		<div id="fws_6683643d654e9" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top" style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop" style=""></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+		<div id="fws_668369798e9c3" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row full-width-content vc_row-o-equal-height vc_row-flex vc_row-o-content-top" style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop" style=""></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
 	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
 		<div class="vc_column-inner">
 			<div class="wpb_wrapper">
-				<div id="fws_6683643d657a1" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+				<div id="fws_668369798eca8" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
 		<div class="vc_column-inner">
 		<div class="wpb_wrapper">
@@ -487,7 +485,7 @@ body::-webkit-scrollbar-thumb {
 		</div> 
 	</div>
 	</div> 
-</div></div><div id="fws_6683643d65d69" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+</div></div><div id="fws_668369798f373" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
 		<div class="vc_column-inner">
 		<div class="wpb_wrapper">
@@ -496,7 +494,7 @@ body::-webkit-scrollbar-thumb {
 		</div> 
 	</div>
 	</div> 
-</div></div><div id="fws_6683643d662c7" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
+</div></div><div id="fws_668369798f896" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style=""><div class="row-bg-wrap"> <div class="row-bg"></div> </div><div class="row_col_wrap_12_inner col span_12  left">
 	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
 		<div class="vc_column-inner">
 		<div class="wpb_wrapper">
@@ -522,7 +520,7 @@ body::-webkit-scrollbar-thumb {
 		</div>
 	</div> 
 </div></div>
-		<div id="fws_6683643d67cf3" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row" style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop" style=""></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
+		<div id="fws_6683697991284" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row" style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop" style=""></div></div></div><div class="row_col_wrap_12 col span_12 dark left">
 	<div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
 		<div class="vc_column-inner">
 			<div class="wpb_wrapper">
